@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <title>Posts list</title>
+
+    <h1>Posts</h1>
+    {% for q in Posts %}
+        <div>
+            <h2>{{ q.post_type }}</h2>
+            <p>{{ q.link }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

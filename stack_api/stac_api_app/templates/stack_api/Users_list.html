@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>Users List</title>
+</head>
+<body>
+    <h1>Questions</h1>
+    {% for q in Users %}
+        <div>
+            <h2>{{ q.display_name }}</h2>
+            <p>{{ q.link }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
